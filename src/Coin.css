@@ -1,0 +1,134 @@
+.coin-container {
+    display: flex;
+    justify-content: center;
+}
+
+.coin-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: start;
+    height:80px;
+    padding:40px;
+    width:1200px;
+    margin:20px;
+    box-shadow: 0px 0px 1.5px white;
+    background-color: #1a1a1c;
+}
+
+.coin-row:hover{
+    transform: scale(1.04);
+    transition: .3s ease-in-out;
+}
+
+.coin{
+    display: flex;
+    align-items: center;
+    padding-right: 24px;
+    min-width:300px;
+}
+
+.coin h1{
+    font-size: 16px;
+    width:150px;
+}
+
+.coin img{
+    height:30px;
+    width:30px;
+    margin-right: 10px;
+}
+
+.coin-symbol{
+    text-transform: uppercase;
+}
+
+.coin-data{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width:100%;
+}
+
+.coin-price{
+    width:110px;
+}
+
+.coin-volume{
+    width: 200px;
+}
+
+.coin-marketcap{
+    width:240px;
+}
+
+.coin-percent{
+    width:80px;
+}
+
+.red{
+    color:#f00606;
+}
+
+.green{
+    color:#11d811;
+}
+
+@media screen and (max-width:1225px){
+    .hide-mobile{
+        display:none;
+    }
+    .coin-row{
+        width:900px;
+    }
+}
+
+@media screen and (max-width:941px){
+    .coin-row{
+        max-width:550px;
+    }
+    .hide-volume{
+        display: none;
+    }
+}
+
+@media screen and (max-width:586px){
+    .coin-row{
+        max-width:450px;
+    }
+    .hide-depth{
+        display: none;
+    }
+}
+
+@media screen and (max-width:496px){
+    .coin-row{
+        max-width:300px;
+        flex-direction: column;
+        height:300px;
+        padding:20px;
+        justify-content: center;
+    }
+    .coin-price{
+        margin: auto;
+        padding-top:20px;
+        width:110px;
+    }
+    .coin{
+        flex-direction: column;
+        padding: 0 0 0 0;
+    }
+    .coin img{
+        height:70px;
+        width:70px;
+        margin-right: 0;
+    }
+    .coin h1{
+        padding-top: 10px;
+        text-align: center;
+        font-size: 30px;
+    }
+    .coin-symbol{
+        padding: 10px 0 0 0;
+    }
+}
